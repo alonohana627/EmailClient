@@ -19,7 +19,13 @@ Throughout this project I perceived few main concepts:
 - Merge a CSS into a JavaFX application
 - That OOP bloats your code like crazy
 - That Java bloats your code like crazy (I believe it was half the length of code in any not OOP language)
-
+### Features
+---------------	
+- Connect, Read, Delete and Send emails from your Gmail.
+- Download attachments
+- Send attachments
+- Connect to multiple Gmail accounts
+- Mark unread/read
 ### Todo
 ---------------	
 - The persistence currently using Binary64 **Encoding** which means this app is anything but secure - swap the encoding to AES that based on user's "key" (or password).
