@@ -14,6 +14,7 @@ public class EmailAccount {
     private Store store;
     private Session session;
 
+
     public EmailAccount(String address, String password) {
         this.address = address;
         this.password = password;
