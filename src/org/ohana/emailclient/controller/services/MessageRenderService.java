@@ -92,16 +92,17 @@ public class MessageRenderService extends Service {
 
     /** Util methods to check the type of the message **/
     private boolean isTextPlain(String contentType){
-         return contentType.contains("TEXT/PLAIN");
+        if(contentType.contains("TEXT/PLAIN")) return true;
+        return false;
     }
 
     private boolean isSimpleType(String contentType){
-        return contentType.contains("TEXT/HTML") ||
-                contentType.contains("mixed") ||
-                contentType.contains("text");
+        if( contentType.contains("TEXT/HTML") || contentType.contains("mixed") || contentType.contains("text")) return true;
+        return false;
     }
 
     private boolean isMultipartType(String contentType){
-        return contentType.contains("multipart");
+         if(contentType.contains("multipart")) return true;
+         return false;
     }
 }
